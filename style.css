@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .logo img{
+    height: 20px;
+}
+.navbar .nav-icons img{
+    height: 20px;
+    margin-left: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;  
+}
+.navbar ul li{
+    margin-left: 30px;
+    font-size: 14px;
+}
+.offers{
+    text-align: center;
+    padding-top: 26px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.offers a{
+    color: rgb(255, 115, 0);
+}
+.back-video video{
+    width: 100%;
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.068);
+    margin-top: 30px;
+}
+.services img{
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+}
+.services a{
+    color: blue;
+}
+title h1{
+    font-size: 40px;
+}
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.product img{
+    height: 90px;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+/* Card Section */
+
+.card img{
+    height: 250px;
+}
+.card-container{
+    margin-top: 30px;
+    text-align: center;
+}
+.card{
+    height: 520px;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    transition: 0.7s;
+}
+.card h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card p{
+    margin-bottom: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.event-pictures img{
+    height: 400px;
+}
+.event-pictures{
+    display: flex;
+    justify-content: space-evenly;
+}
+.apple-events{
+    background-color: black;
+    margin-top: 100px;
+    color: white;
+    padding: 40px;
+}
+.apple-events h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.section-3 img{
+    height: 700px;
+}
+.section-3 h1{
+    font-size: 50px;
+}
+.store{
+    display: flex;
+}
+.store img {
+    height: 22px;
+}
+
+/* Footer */
+
+.menu-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-list ul{
+    list-style: none;
+}
+.store{
+    margin-left: 5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu-items{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.footer{
+    text-align: center;
+}
+.footer p{
+    padding: 20px;
+}
+.menuopen{
+    display: none;
+}
+.cross{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 40px;
+        position: absolute;
+        background-color: white;
+        opacity: 0%;
+        transition: 0.6s;
+    }
+    .navbar ul li{
+        padding-top: 30px;
+    }
+    .menuopen{
+        display: block;
+        position: absolute;
+        right: 4%;
+        top: 25%;
+        height: 25px;
+    }
+    .cross{
+        display: block;
+        position: absolute;
+        right: 4%;
+        height: 25px;
+    }
+    .offers p{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .offers a{
+        font-size: 13px;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .titles h1{
+        font-size: 30px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .apple-events{
+        display: flex;
+        flex-direction: column;
+    }
+    .event-pictures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-pictures img{
+        height: 350px;
+        width: 200px;
+    }
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-3 img{
+        height: 400px;
+    }
+    .section-3 h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+    .menu-list ul{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
